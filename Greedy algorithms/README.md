@@ -35,4 +35,51 @@ Constraints:
 
 So consider: lowest 2 and highest 1 and we compere result of 3 highest elements with lowest 2 and 1 hightest. 
 
+# 4. Distribute candy
+N kids sdand in a line, each 
+having an integer rating. We 
+distribute candies following:
+    - Each kid gets at least 1 candy
+    - Kinds with higher raitings than
+    theri neighbours get more candies.
+
+Find the minimum candies required.
+
+Constraints:
+    1 <= N <= 1e5
+
+# 5. Largest permutation
+
+Given an array A of a random permuation number from 1 to N.
+Given B, the number of swaps in A that we can make.
+
+ Find the largest permuation possible
+
+ Constraints
+ - N between 1 and 1e6
+ - B between 1 and 1e9
+
+# 6. Meeting rooms
+
+Given a list of intervals: {s, e} for meetings.
+
+Find the least number of meeting rooms required.
+
+Constraints:
+    - 1 <= N <= 1e5
+    - 1 <= A[i][0] <= Ai[[1] <= 1e9]
+
+# 7. Seats
+
+There is a row of empty (.)
+and filles(x) seats.
+
+Find the minimum number of moves
+required to make the people sit toghter.
+
+Constraints: 
+    - 1 <= N <= 1e6
+
+
+
 

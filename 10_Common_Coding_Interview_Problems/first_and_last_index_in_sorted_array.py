@@ -71,3 +71,41 @@ print(find_end([2,4,5,5,5,5,5,7,9,9], 5))
 
 assert [2, 6] == first_and_last_v2([2,4,5,5,5,5,5,7,9,9], 5) # True
 assert [8, 9] == first_and_last_v2([2,4,5,5,5,5,5,7,9,9], 9) # True
+
+
+"""
+Iterative Binary Search Algorithm:
+"""
+
+def binary_search(arr, x):
+
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if arr[mid] == x:
+            return mid
+        
+        elif arr[mid] < x: 
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        
+    return -1 
+
+
+##################################
+
+assert 3 == binary_search([2, 3, 4, 10, 40], 10)
+
+arr = [2, 3, 4, 10, 40]
+x = 10
+
+# Function call
+result = binary_search(arr, x)
+if result != -1:
+    print("Element is present at index", result)
+else:
+    print("Element is not present in array")
